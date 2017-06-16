@@ -270,7 +270,26 @@ footer p {
 
 
 
+/* Added Media Queries Below */
+/* These handle index */
+@media screen and (max-width: 980px) {
+	section {
+		width: 450px;
+	}
 
+	aside {
+		width: 280px;
+	}
+
+	.container {
+		width: 770px;
+	}
+
+	#image-aboutme {
+		width: 100%;
+		margin-bottom: 16px;
+	}
+}
 
 
 
