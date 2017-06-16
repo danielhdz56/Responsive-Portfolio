@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8"/>
+		<link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+		<title>Contact</title>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+			<!--
+				Purpose of this container is to set a idth of 960px, and be able to center accordingly.
+				Although I was advised to set the max-width to 960px, I felt necessary to use a width instead 
+				(As the window gets smaller I don't want elements to overlap)
+			-->
+				<div id="main-logo">
+				<!--Making the "main-logo" and "nav-bar" divs is easier for me to see what I'm floating.-->
+					<h1 id="heading-logo" class="headings">Daniel Hernandez</h1>
+					<!--This h1 will recieve all of the styling from the class and id. With precedence on the id (because its more specific)-->
+				</div>
+
+
+
+				<div id="nav-bar">
+					<nav>
+						<ul>
+							<li><a href="index.html">About</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+
+		<main>
+		<!--
+			Should the aside be inside the main element or outside? 
+			One could argue that it should be outside because it is often used as another navigation menu. Which is not a part of the "main" content".
+			However, one could also argue that it makes sense visually to break up elements inside the body in three parts:
+			header, main, footer
+			...When I ask in class the answer is "it depends" so it is safe to assume that "it depends"
+			Note to self: Add to list of things to ponder during self-reflection time. 
+		-->
+			<div class="container">
+				<aside>
+					<h3 class="headings">Connect with Me</h3>
+					<hr />
+					<!-- Note to self: Figure out if they want a horizontal line? or a bottom border?-->
+					<a href="https://github.com/danielhdz56">
+						<img class="image-logo" src="assets/images/github-icon.png" alt="icon for github"/>
+					</a>
+					<a href="https://www.linkedin.com/in/daniel-hernandez-791726142">
+						<img class="image-logo" src="assets/images/linkedin-icon.png" alt="icon for linkedin"/>
+					</a>
+					<a href="https://stackoverflow.com/users/7999043/daniel-hernandez">
+						<img class="image-logo" src="assets/images/stackoverflow-icon.png" alt="icon for stackoverflow"/>
+						<!--
+							This image appeared bigger than the other icons even when specifying different widths. 
+							After using dev tools it was apparent that the first two icons just had whitespace around the image. 
+							I handled this issue by cropping that whitespace out.
+							It appears that the instructors didn't catch this (as the stackoverflow icon is still bigger in the snapshots)
+						-->
+					</a>
+				</aside>
+				
+				<section>
+					<h1 class="headings">Contact</h1>
+					<hr/>
+					<div class="section-content">
+					<!--
+						Created this class to use as a template when handling margins no matter the element type
+					-->
+						<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+							Name<br>
+							<input type="text" name="completename" placeholder="John Smith"><br><br>
+							Email<br>
+							<input type="text" name="mail" placeholder="example@gmail.com"><br><br>
+							Message<br>
+							<textarea id="input-message" name="message"></textarea><br><br>
+							<input type="submit" id="submit-button" value="Submit">
+						</form>
+					</div>
+				</section>
+			</div>
+		</main>
+		
+
+		<footer>
+			<p>&copy; Copyright 2017 Daniel Hernandez</p>
+			<!--Made this into a paragraph to make it easier to know what I'm styling later-->
+		</footer>
+	</body>
+
+</html>
