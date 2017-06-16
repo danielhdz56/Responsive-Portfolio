@@ -126,36 +126,13 @@ main {
 	*/
 	margin: 40px 0;	
 }
-
-
-aside {
-	float: right;
-	width: 270px;
-	padding: 6px 32px;
-	border: 1px solid #dddddd;
-	margin-left: 40px;
-	background-color: #ffffff;
-	text-align: center;
-	/* I aligned this center because it looks better this way. */
-}
-
-aside .headings {
-	padding: 28px 0 22px 0;
-}
-
-.image-logo {
-	width: 62px;
-	height: 62px;
-	margin: 26px 0;
-}
-
-
 section {
 	width: 650px;
 	padding: 6px 32px;
 	border: 1px solid #dddddd;	
 	background-color: #ffffff;
 	min-height: 500px;
+	float: left;
 }
 
 .section-content {
@@ -174,6 +151,30 @@ section p {
 	margin: 24px 0 25px 0;
 	line-height: 2;
 }
+
+aside {
+	width: 270px;
+	padding: 6px 32px;
+	border: 1px solid #dddddd;
+	margin-left: 40px;
+	background-color: #ffffff;
+	text-align: center;
+	float: left;
+	/* I aligned this center because it looks better this way. */
+}
+
+aside .headings {
+	padding: 28px 0 22px 0;
+}
+
+.image-logo {
+	width: 62px;
+	height: 62px;
+	margin: 26px 0;
+}
+
+
+
 
 
 
