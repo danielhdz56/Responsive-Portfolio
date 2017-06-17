@@ -292,6 +292,34 @@ footer p {
 	}
 }
 
+@media screen and (max-width: 768px) {
+	section {
+		width: 100%;
+		/* For some reason if you don't write that there is no float,
+		we don't see the margin of the top of the aside tag */
+		float: none;
+	}
+
+	.section-content {
+		margin-bottom: 0;
+	}
+
+	#image-aboutme {
+		width: 50%;
+	}
+
+	aside {
+		clear: both;
+		margin-left: 0;
+		margin-top: 40px;
+		width: 100%;
+		text-align: left;
+		/* For some reason if you don't write that there is no float,
+		we don't see the margin of the bottom of the main tag */
+		float: none;
+	}
+}
+
 
 
 
