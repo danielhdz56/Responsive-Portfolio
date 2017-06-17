@@ -278,20 +278,27 @@ footer p {
 	}
 
 	aside {
-		width: 280px;
+		width: 278px;
 	}
 
 	.container {
-		width: 770px;
+		width: 768px;
 	}
 
 	#image-aboutme {
 		width: 100%;
 		margin-bottom: 16px;
 	}
+	header, footer {
+		min-width: 768px;
+	}
 }
 
 @media screen and (max-width: 768px) {
+	.container {
+		max-width: 640px;
+	}
+
 	section {
 		width: 100%;
 		/* For some reason if you don't write that there is no float,
@@ -317,12 +324,13 @@ footer p {
 		we don't see the margin of the bottom of the main tag */
 		float: none;
 	}
+	header, footer {
+		min-width: 500px;
+	}
 }
 
 @media screen and (max-width: 640px) {
-	.container {
-		width: 640px;
-	}
+	
 
 	header {
 		height: 100%;
@@ -351,7 +359,19 @@ footer p {
 		width: 100%;
 	}
 
-	
+	section {
+		width: 100%;
+	}
+
+	header, footer {
+		max-width: 640px;
+		min-width: 0;
+	}
+
+	.container {
+		max-width: none;
+		width: 100%;
+	}
 
 }
 
