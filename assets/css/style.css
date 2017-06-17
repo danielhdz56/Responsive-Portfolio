@@ -396,6 +396,31 @@ footer p {
 	.right-divs {
 		margin-left: 57px;
 	}
+}
+
+@media screen and (max-width: 640px) {
+	#portfolio-section div {
+		margin-bottom: 50px;
+		clear: both;
+		width: 100%;
+		height: 330px;
+
+
+	}
+
+	#portfolio-section img {
+		width: 100%;
+		height: 320px;
+
+	}
+	.right-divs {
+		margin-left: 0px;
+	}
+
+	#portfolio-section p {
+		top: 210px;
+	}
+}
 
 
 
