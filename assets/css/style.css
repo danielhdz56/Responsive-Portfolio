@@ -13,7 +13,6 @@ body {
 	*/
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	min-width: 1080px;
 	/* I added this out of my own volition. I LIKE IT. I need sleep.*/
 }
 
@@ -320,6 +319,41 @@ footer p {
 	}
 }
 
+@media screen and (max-width: 640px) {
+	.container {
+		width: 640px;
+	}
+
+	header {
+		height: 100%;
+		text-align: center;
+	}
+
+	#main-logo {
+		float: none;
+		clear: both;
+	}
+
+
+	#nav-bar {
+		float: none;
+		clear: both;
+		display: inline-block;
+		width: 100%;
+		padding: 15px;
+	}
+
+	li {
+		width: 33%;
+	}
+
+	#image-aboutme {
+		width: 100%;
+	}
+
+	
+
+}
 
 
 
