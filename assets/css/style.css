@@ -375,9 +375,18 @@ footer p {
 
 }
 
+/* These handle Portfolio.html */
 
 
-
+@media screen and (max-width: 980px) {
+	.right-divs {
+		position: static;
+	}
+	#portfolio-section img {
+		width:100%;
+		height: 230px;
+	}
+}
 
 
 
