@@ -388,6 +388,16 @@ footer p {
 	}
 }
 
+@media screen and (max-width: 768px) {
+	#portfolio-section div {
+		width: 40%;
+		margin-bottom: 50px;
+	}
+	.right-divs {
+		margin-left: 57px;
+	}
+
+
 
 
 
