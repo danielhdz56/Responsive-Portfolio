@@ -80,7 +80,7 @@ header {
 	border-left: 1px solid #cccccc;
 }
 
-#nav-bar a, aside a, #portfolio-section a {
+#nav-bar a, aside a, #portfolio-section a, #main-logo a {
 /* 	
 	Incase there are future links that I will want the default text-decoration
 	I use this instead of just "a"
