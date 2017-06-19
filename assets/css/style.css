@@ -16,8 +16,6 @@ body {
 	/* I added this out of my own volition. I LIKE IT. I need sleep.*/
 }
 
-
-
 .container {
 	/* 
 		In order to center the container we must specify a width. 
@@ -27,9 +25,6 @@ body {
 	width: 960px;
 	margin: 0 auto;
 }
-
-
-
 
 header {
 	width: 100%;
@@ -48,7 +43,6 @@ header {
 	float: left;
 }
 
-
 #heading-logo {
 	height: 100px;
 	padding: 32px;
@@ -62,9 +56,6 @@ header {
 	font-family: 'Georgia', Times, "Times New Roman", serif;
 	/*	Place fonts in quotes if they have spacing (Times New Roman) */
 }
-
-
- 
 
 #nav-bar {
 	float: right;
@@ -112,11 +103,6 @@ header {
 	color: whitesmoke;
 }
 
-
-
-
-
-
 main {
 	clear: both;
 	/*
@@ -125,6 +111,7 @@ main {
 	*/
 	margin: 40px 0;	
 }
+
 section {
 	width: 650px;
 	padding: 6px 32px;
@@ -143,8 +130,6 @@ section {
 	margin-right: 25px;	
 	width: 200px;
 }
-
-
 
 section p {
 	margin: 24px 0 25px 0;
@@ -172,11 +157,6 @@ aside .headings {
 	margin: 26px 0;
 }
 
-
-
-
-
-
 /* contact.html style specific */
 section input, section textarea {
 	width: 100%;
@@ -199,20 +179,15 @@ section input, section textarea {
 	color: #ffffff;
 	font-size: 16px;
 }
-
 /* ^^^contact.html style specific^^^ */
 
-
 /* portfolio.html style specific */
-
  #portfolio-section img {
  	position: relative;
  	top: -100px;
  	z-index: 1;
  	width: 275px;
- 	height: 205px;
- 	
- 	
+ 	height: 205px;	
  }
 
  #portfolio-section {
@@ -239,12 +214,7 @@ section input, section textarea {
 	background-color: #4aaaa5;
 	color: #ffffff;
 }
-
-
 /* ^^^portfolio.html style specific^^^ */
-
-
-
 footer {
 	clear: both;
 	width: 100%;
@@ -256,19 +226,14 @@ footer {
 	This is the code for the sticky footer (I just didn't want it)
 	position: fixed;
 	bottom: 0;
-	*/
-	
+	*/	
 }
-
 
 footer p {
 	height: 102px;
 	padding: 35px 0 35px 0;
 	margin: 0;
 }
-
-
-
 
 /* Added Media Queries Below */
 /* These handle index */
@@ -323,6 +288,7 @@ footer p {
 		/* For some reason if you don't write that there is no float,
 		we don't see the margin of the bottom of the main tag */
 		float: none;
+
 	}
 	header, footer {
 		min-width: 500px;
@@ -330,8 +296,6 @@ footer p {
 }
 
 @media screen and (max-width: 640px) {
-	
-
 	header {
 		height: 100%;
 		text-align: center;
@@ -341,7 +305,6 @@ footer p {
 		float: none;
 		clear: both;
 	}
-
 
 	#nav-bar {
 		float: none;
@@ -372,16 +335,14 @@ footer p {
 		max-width: none;
 		width: 100%;
 	}
-
 }
 
 /* These handle Portfolio.html */
-
-
 @media screen and (max-width: 980px) {
 	.right-divs {
 		position: static;
 	}
+
 	#portfolio-section img {
 		width:100%;
 		height: 230px;
@@ -404,15 +365,13 @@ footer p {
 		clear: both;
 		width: 100%;
 		height: 330px;
-
-
 	}
 
 	#portfolio-section img {
 		width: 100%;
 		height: 320px;
-
 	}
+
 	.right-divs {
 		margin-left: 0px;
 	}
@@ -421,21 +380,3 @@ footer p {
 		top: 210px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
