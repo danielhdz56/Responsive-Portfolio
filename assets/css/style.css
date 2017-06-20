@@ -236,7 +236,6 @@ footer p {
 }
 
 /* Added Media Queries Below */
-/* These handle index */
 @media screen and (max-width: 980px) {
 	section {
 		width: 450px;
@@ -252,23 +251,39 @@ footer p {
 
 	#image-aboutme {
 		width: 100%;
+		/* Important to note that when the width takes up 100% it does so of its container */
 		margin-bottom: 16px;
 	}
+
 	header, footer {
 		min-width: 768px;
+		/* Important to note that as the browser window gets smaller it doesn't do so below 768px */
+	}
+
+	.right-divs {
+		position: static;
+		/* 
+			This applies to the portfolio page. The position static allows the image overlays(the text above the image) to revert back to where they should be. 
+			In other words it overrides the position relative. 
+		*/
+	}
+
+	#portfolio-section img {
+		width:100%;
+		height: 230px;
 	}
 }
 
 @media screen and (max-width: 768px) {
 	.container {
 		max-width: 640px;
+		/* Important to note that as the browser window gets bigger, the width of the container does not exceed 640px */
 	}
 
 	section {
 		width: 100%;
-		/* For some reason if you don't write that there is no float,
-		we don't see the margin of the top of the aside tag */
 		float: none;
+		/* Float none makes section take up the entire "block" because it overrides the float left above */
 	}
 
 	.section-content {
@@ -285,13 +300,20 @@ footer p {
 		margin-top: 40px;
 		width: 100%;
 		text-align: left;
-		/* For some reason if you don't write that there is no float,
-		we don't see the margin of the bottom of the main tag */
 		float: none;
-
 	}
+
 	header, footer {
 		min-width: 500px;
+	}
+
+	#portfolio-section div {
+		width: 40%;
+		margin-bottom: 50px;
+	}
+	
+	.right-divs {
+		margin-left: 57px;
 	}
 }
 
@@ -335,31 +357,7 @@ footer p {
 		max-width: none;
 		width: 100%;
 	}
-}
 
-/* These handle Portfolio.html */
-@media screen and (max-width: 980px) {
-	.right-divs {
-		position: static;
-	}
-
-	#portfolio-section img {
-		width:100%;
-		height: 230px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	#portfolio-section div {
-		width: 40%;
-		margin-bottom: 50px;
-	}
-	.right-divs {
-		margin-left: 57px;
-	}
-}
-
-@media screen and (max-width: 640px) {
 	#portfolio-section div {
 		margin-bottom: 50px;
 		clear: both;
